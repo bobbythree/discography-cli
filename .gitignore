@@ -1,0 +1,67 @@
+# Binaries
+bin/
+dist/
+build/
+
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go coverage
+coverage.out
+coverage.html
+
+# Go workspace
+go.work
+go.work.sum
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# LazyVim / Neovim
+.lazy/
+.mason/
+.nvimswap/
+Session.vim
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs/editors
+.idea/
+.vscode/
+
+# Direnv
+.direnv/
+
+# Cache
+.cache/
+
+# Test/debug output
+pprof/
+*.prof
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
