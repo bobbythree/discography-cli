@@ -1,13 +1,7 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/bobbythree/discography-cli/data"
-)
+import "github.com/bobbythree/discography-cli/tui"
 
 func main() {
-	for _, album := range data.Albums {
-		fmt.Printf("%v: %v\n", album.Artist, album.AlbumName)
-	}
+	tui.Run()
 }
