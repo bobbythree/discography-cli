@@ -14,7 +14,7 @@ var Albums = []models.Album{
 		TrackList: []models.Track{
 			{TrackNumber: 1, Title: "So What"},
 			{TrackNumber: 2, Title: "Freddie Freeloader"},
-			{TrackNumber: 3, Title: "Blue In Green"},
+			{TrackNumber: 3, Title: "Blue in Green"},
 			{TrackNumber: 4, Title: "All Blues"},
 			{TrackNumber: 5, Title: "Flamenco Sketches"},
 		},
