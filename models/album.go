@@ -7,6 +7,6 @@ type Album struct {
 	RecordLabels []string
 	ReleaseYear  string
 	Genre        string
-	Description  string
+	Style        string
 	TrackList    []Track
 }
