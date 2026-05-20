@@ -27,6 +27,10 @@ func Run() {
 		}
 
 		result := search.QueryAlbums(input, data.Albums)
+		if len(result) == 0 {
+			fmt.Println("No albums found. Try again.")
+		}
+
 		for _, a := range result {
 			fmt.Printf("%s - %s\n", a.Artist, a.AlbumName)
 		}
