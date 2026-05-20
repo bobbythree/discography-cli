@@ -5,18 +5,27 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+
+	"github.com/bobbythree/discography-cli/data"
+	"github.com/bobbythree/discography-cli/search"
 )
 
 func Run() {
 	scanner := bufio.NewScanner(os.Stdin)
 
+	fmt.Println("Welcome to Discography-cli. Type an artist or album name to get started.")
+
 	for {
-		fmt.Println("Welcome to Discography-cli. Type an artist or album name to get started.")
 		fmt.Print("search> ")
 
 		scanner.Scan()
 		input := scanner.Text()
-		fmt.Printf("You searched for %s\n", input)
 
+		result := search.QueryAlbums(input, data.Albums)
+
+		for _, a := range result {
+			fmt.Printf("%s - %s\n", a.Artist, a.AlbumName)
+		}
+		fmt.Println("")
 	}
 }
