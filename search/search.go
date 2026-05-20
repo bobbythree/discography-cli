@@ -9,7 +9,7 @@ import (
 func QueryAlbums(q string, albums []models.Album) []models.Album {
 	var result []models.Album
 
-	query := strings.ToLower(q)
+	query := normalize(q)
 
 	for _, a := range albums {
 		artist := strings.ToLower(a.Artist)

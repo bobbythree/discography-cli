@@ -21,8 +21,12 @@ func Run() {
 		scanner.Scan()
 		input := scanner.Text()
 
-		result := search.QueryAlbums(input, data.Albums)
+		// checks
+		if len(input) == 0 {
+			continue
+		}
 
+		result := search.QueryAlbums(input, data.Albums)
 		for _, a := range result {
 			fmt.Printf("%s - %s\n", a.Artist, a.AlbumName)
 		}
